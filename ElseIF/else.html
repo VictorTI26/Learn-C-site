@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="else.css">
+  <title>Estruturas Condicionais</title>
+</head>
+<body>
+
+  <div class="sidebar">
+    <h2>Condicionais</h2>
+    <a class="active" href="#">IF / ELSE</a>
+    <a href="#">SWITCH / CASE</a>
+    <a href="#">Exemplos Resolvidos</a>
+    <a href="#">Atividades</a>
+  </div>
+
+  <div class="main">
+    <div class="box">
+      <h1>Estruturas Condicionais</h1>
+      <p>As estruturas condicionais são utilizadas para tomar decisões no código com base em uma condição. Vamos explorar os principais comandos abaixo.</p>
+    </div>
+
+    <h2>1. if, else if, else</h2>
+    <p>Usamos o <strong>if</strong> para testar uma condição. Podemos encadear com <strong>else if</strong> e usar <strong>else</strong> como alternativa final.</p>
+    <pre>
+let nota = 7;
+
+if (nota >= 7) {
+  console.log("Aprovado");
+} else if (nota >= 5) {
+  console.log("Recuperação");
+} else {
+  console.log("Reprovado");
+}
+    </pre>
+
+    <h2>2. switch e case</h2>
+    <p>O comando <strong>switch</strong> testa uma variável contra múltiplos <strong>cases</strong>.</p>
+    <pre>
+let dia = 3;
+
+switch (dia) {
+  case 1:
+    console.log("Domingo");
+    break;
+  case 2:
+    console.log("Segunda-feira");
+    break;
+  case 3:
+    console.log("Terça-feira");
+    break;
+  default:
+    console.log("Dia inválido");
+}
+    </pre>
+
+    <h2>3. Uso do break e default</h2>
+    <p><strong>break</strong> encerra o bloco de execução do switch. <strong>default</strong> é executado se nenhum case for correspondido.</p>
+
+    <h2>4. Exemplos Resolvidos</h2>
+    <p><strong>Exemplo:</strong> Verificar se um número é positivo, negativo ou zero.</p>
+    <pre>
+let numero = 0;
+
+if (numero > 0) {
+  console.log("Positivo");
+} else if (numero < 0) {
+  console.log("Negativo");
+} else {
+  console.log("Zero");
+}
+    </pre>
+
+    <h2>5. Atividades para Praticar</h2>
+    <ul>
+      <li>Crie um código que leia a idade e diga se é maior ou menor de idade.</li>
+      <li>Verifique se um número é par ou ímpar.</li>
+      <li>Utilize switch para imprimir o nome do mês com base no número (1 a 12).</li>
+      <li>Crie um menu com switch para um sistema de loja (ex: 1 - Comprar, 2 - Vender, etc.).</li>
+    </ul>
+  </div>
+
+</body>
+</html>
