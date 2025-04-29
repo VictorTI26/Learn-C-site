@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="else2.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estruturas Condicionais</title>
+</head>
+<body>
+    <aside id="intro" class="nav-bar-container">
+        <h2>Condicionais</h2>
+        <nav>
+            <ul>
+                <li class="btns"><a class="active" href="#if">IF / ELSE</a></li>
+                <li class="btns"><a href="#SWITCH">SWITCH / CASE</a></li>
+                <li class="btns"><a href="#Exemplos">Exemplos Resolvidos</a></li>
+                <li class="btns"><a href="#atividades">Atividades</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main>
+
+        <section class="section-1">
+                <h1>Estruturas Condicionais</h1>
+                <p>As estruturas condicionais são utilizadas para tomar decisões no código com base em uma condição. Vamos explorar os principais comandos abaixo.</p>
+        </section>
+
+        <section class="section-2">
+
+            <aside id="if">
+                <h2>1. if, else if, else</h2>
+                <p>Usamos o <strong>if</strong> para testar uma condição. Podemos encadear com <strong>else if</strong> e usar <strong>else</strong> como alternativa final.</p>
+                <pre>
+let nota = 7;
+
+if (nota >= 7) {
+console.log("Aprovado");
+} else if (nota >= 5) {
+console.log("Recuperação");
+} else {
+console.log("Reprovado");
+}
+                </pre>
+            </aside>
+
+            <aside id="SWITCH">
+                
+                <h2>2. switch e case</h2>
+                <p>O comando <strong>switch</strong> testa uma variável contra múltiplos <strong>cases</strong>.</p>
+                <pre>
+let dia = 3;
+
+switch (dia) {
+case 1:
+console.log("Domingo");
+break;
+case 2:
+console.log("Segunda-feira");
+break;
+case 3:
+console.log("Terça-feira");
+break;
+default:
+console.log("Dia inválido");
+}
+                </pre>
+
+            </aside>
+
+            <aside>
+
+                <h2>3. Uso do break e default</h2>
+                <p><strong>break</strong> encerra o bloco de execução do switch. <strong>default</strong> é executado se nenhum case for correspondido.</p>
+            
+            </aside>
+
+            <aside id="Exemplos">
+
+                <h2>4. Exemplos Resolvidos</h2>
+                <p><strong>Exemplo:</strong> Verificar se um número é positivo, negativo ou zero.</p>
+                <pre>
+let numero = 0;
+
+if (numero > 0) {
+console.log("Positivo");
+} else if (numero < 0) {
+console.log("Negativo");
+} else {
+console.log("Zero");
+}
+                </pre>
+
+            </aside>
+
+            <aside id="atividades">
+
+                <h2>5. Atividades para Praticar</h2>
+                <ul>
+                    <li>Crie um código que leia a idade e diga se é maior ou menor de idade.</li>
+                    <li>Verifique se um número é par ou ímpar.</li>
+                    <li>Utilize switch para imprimir o nome do mês com base no número (1 a 12).</li>
+                    <li>Crie um menu com switch para um sistema de loja (ex: 1 - Comprar, 2 - Vender, etc.).</li>
+                </ul>
+                
+            </aside>
+
+        </section>
+
+        <footer class="footer">
+            <div class="footer-container">
+              <p>&copy; 2025 Estruturas Condicionais | Desenvolvido por Felipe</p>
+              <nav class="footer-links">
+                <a href="#intro">Início</a>
+                <a href="#Exemplos">Exemplos</a>
+                <a href="#atividades">Atividades</a>
+              </nav>
+            </div>
+          </footer>
+    </main>
+</body>
+</html>
