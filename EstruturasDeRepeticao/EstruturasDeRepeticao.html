@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estruturas de Repetição em C</title>
+    <link rel="stylesheet" href="EstruturasDeRepeticao.css"> <!-- Conectando com o arquivo CSS -->
+</head>
+<body>
+
+    <!-- Menu Lateral -->
+    <div class="nav-bar-container">
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="#">Introdução</a></li>
+            <li><a href="#">Estruturas de Repetição</a></li>
+            <li><a href="#">Exemplos</a></li>
+            <li><a href="#">Atividades</a></li>
+        </ul>
+    </div>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <section class="section-1">
+            <h1>Estruturas de Repetição em C</h1>
+            <p>As estruturas de repetição são usadas quando é necessário executar um bloco de código várias vezes. Vamos ver como utilizá-las em C.</p>
+        </section>
+
+        <section class="section-2">
+            <h2>1. while</h2>
+            <p>A estrutura <code>while</code> executa um bloco de código enquanto uma condição for verdadeira. A condição é verificada antes da execução do bloco.</p>
+            <pre>
+while (condição) {
+    // comandos
+}
+            </pre>
+        </section>
+
+        <section class="section-2">
+            <h2>2. do while</h2>
+            <p>A estrutura <code>do while</code> garante que o bloco de código seja executado pelo menos uma vez, pois a condição é verificada após a execução.</p>
+            <pre>
+do {
+    // comandos
+} while (condição);
+            </pre>
+        </section>
+
+        <section class="section-2">
+            <h2>3. for</h2>
+            <p>A estrutura <code>for</code> é usada quando se sabe antecipadamente o número de vezes que um bloco de código deve ser executado.</p>
+            <pre>
+for (inicialização; condição; incremento) {
+    // comandos
+}
+            </pre>
+        </section>
+
+        <section class="section-2">
+            <h2>4. Exemplos de Códigos (Atividades Resolvidas)</h2>
+
+            <h3>Exemplo 1: Contar de 1 a 10 com while</h3>
+            <pre>
+#include &lt;stdio.h&gt;
+
+int main() {
+    int i = 1;
+    while (i <= 10) {
+        printf("%d\n", i);
+        i++;
+    }
+    return 0;
+}
+            </pre>
+
+            <h3>Exemplo 2: Contar de 10 a 1 com do while</h3>
+            <pre>
+#include &lt;stdio.h&gt;
+
+int main() {
+    int i = 10;
+    do {
+        printf("%d\n", i);
+        i--;
+    } while (i > 0);
+    return 0;
+}
+            </pre>
+
+            <h3>Exemplo 3: Somar os números de 1 a 5 com for</h3>
+            <pre>
+#include &lt;stdio.h&gt;
+
+int main() {
+    int i, soma = 0;
+
+    for (i = 1; i <= 5; i++) {
+        soma = soma + i;
+    }
+
+    printf("A soma de 1 a 5 é: %d\n", soma);
+
+    return 0;
+}
+            </pre>
+        </section>
+
+        <section class="section-2">
+            <h2>5. Lista de Atividades (Para a Comunidade Resolver)</h2>
+            <ol>
+                <li>Mostre a palavra "Olá, Mundo!" cinco vezes usando <code>for</code>.</li>
+                <pre>
+#include &lt;stdio.h&gt;
+
+int main() {
+    int i;
+    for (i = 1; i <= 5; i++) {
+        printf("Olá, Mundo!\n");
+    }
+    return 0;
+}
+                </pre>
+
+                <li>Mostre os números de 1 a 3 usando <code>while</code>.</li>
+                <pre>
+#include &lt;stdio.h&gt;
+
+int main() {
+    int i = 1;
+    while (i <= 3) {
+        printf("%d\n", i);
+        i++;
+    }
+    return 0;
+}
+                </pre>
+
+                <li>Mostre a palavra "Repetição" três vezes usando <code>do while</code>.</li>
+                <pre>
+#include &lt;stdio.h&gt;
+
+int main() {
+    int i = 1;
+    do {
+        printf("Repetição\n");
+        i++;
+    } while (i <= 3);
+    return 0;
+}
+                </pre>
+
+                <li>Mostre os números de 1 a 10 usando <code>for</code>.</li>
+                <pre>
+#include &lt;stdio.h&gt;
+
+int main() {
+    int i;
+    for (i = 1; i <= 10; i++) {
+        printf("%d\n", i);
+    }
+    return 0;
+}
+                </pre>
+
+                <li>Mostre os números de 5 a 1 usando <code>while</code>.</li>
+                <pre>
+#include &lt;stdio.h&gt;
+
+int main() {
+    int i = 5;
+    while (i >= 1) {
+        printf("%d\n", i);
+        i--;
+    }
+    return 0;
+}
+                </pre>
+            </ol>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2025 Estruturas de Repetição em C</p>
+            <div class="footer-links">
+                <a href="#">Sobre</a>
+                <a href="#">Contato</a>
+                <a href="#">Política de Privacidade</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
