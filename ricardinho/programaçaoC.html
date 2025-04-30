@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="programacaoC.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estruturas Condicionais</title>
+</head>
+<body>
+    <aside id="intro" class="nav-bar-container">
+        <h2>Condicionais</h2>
+        <nav>
+            <ul>
+                <li class="btns"><a class="active" href="#if">IF / ELSE</a></li>
+                <li class="btns"><a href="#SWITCH">SWITCH / CASE</a></li>
+                <li class="btns"><a href="#Exemplos">Exemplos Resolvidos</a></li>
+                <li class="btns"><a href="#atividades">Atividades</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main>
+
+        <section class="section-1">
+                <h1>Introduçao à programação C</h1>
+                <p>A linguagem C é uma linguagem de programação eficiente e portátil usada para criar sistema, softwares e aplicações de baixo nível </p>
+        </section>
+
+        <section class="section-2">
+
+            <aside id="if">
+                <h2>História e importância da linguagem C.</h2>
+                
+                <pre class="rica">
+A linguagem C foi criada por Dennis Ritchie em 1972 nos laboratórios Bell para desenvolver o sistema operacional UNIX, e se tornou uma das linguagens mais influentes da história, servindo de base para muitas outras linguagens modernas (como C++, Java e Python) e sendo essencial até hoje em sistemas embarcados, sistemas operacionais e desenvolvimento de software de alto desempenho.
+                </pre>
+            </aside>
+
+            <aside id="SWITCH">
+                
+                <h2>2. Estrutura básica de uma programação C </h2>
+                <p class="rica">A estrutura básica de um programa em C começa com a inclusão de bibliotecas necessárias, como #include <stdio.h>, que permite o uso de funções como printf(). O programa segue com a definição da função main(), que é o ponto de entrada e onde a execução começa. Dentro da função main(), pode-se usar comandos como printf() para exibir informações. Ao final, o return 0; indica que o programa foi executado com sucesso, retornando o valor 0 ao sistema operacional. Essa estrutura serve como base para a criação de programas em C, permitindo a implementação de diversas funcionalidades.>.</p>
+                <pre>
+#include <stdio.h>  // Inclusão da biblioteca para entrada/saída
+
+int main() {  // Função principal, ponto de entrada do programa
+    
+    printf("Olá, Mundo! Este é meu primeiro programa em C.\n");  // Exibe uma mensagem na tela
+                        
+    return 0;  // Retorna 0, indicando que o programa foi executado com sucesso
+}
+                        
+                </pre>
+
+            </aside>
+
+            <aside>
+
+                <h2>3. Como compilar e executar um programa em C</h2>
+                <p class="rica">Para compilar e executar programas em C, você pode usar diferentes ferramentas. Com o GCC, instale o compilador, escreva seu código, compile com gcc -o nome_do_programa arquivo.c no terminal, e execute com ./nome_do_programa. No Dev C++, basta escrever o código na IDE, compilar clicando em Execute > Compile, e rodar com Execute > Run. Já no Code::Blocks, crie um projeto, compile com Build ou Ctrl+F9, e execute com Run ou Ctrl+F10.</p>
+        
+            </aside>
+
+            <aside id="Exemplos">
+
+                <h2>4. Sintaxe básiaca</h2>
+                <p></p>
+                <h1>Comentarios</h1>
+                <pre> 
+// Isso é um comentário
+
+/* Este é um comentário de várias linhas */
+</pre>
+<h1>Identação</h1>
+<pre>
+   
+#include <stdio.h>
+
+    int main() {
+        int idade = 20;
+        
+        if (idade >= 18) {  // Condicional
+            printf("Maior de idade\n");  // Bloco indentado
+        } else {
+            printf("Menor de idade\n");  // Bloco indentado
+        }
+        
+        return 0;  // Retorno indentado
+    }
+</pre>
+
+            </aside>
+
+        </section>
+
+        <footer class="footer">
+            <div class="footer-container">
+              <p>&copy; 2025 Estruturas Condicionais | Desenvolvido por Felipe</p>
+              <nav class="footer-links">
+                <a href="#intro">Início</a>
+                <a href="#Exemplos">Exemplos</a>
+                <a href="#atividades">Atividades</a>
+              </nav>
+            </div>
+          </footer>
+    </main>
+</body>
+</html>
