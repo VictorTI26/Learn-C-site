@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="operadoresexpressoes.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores e Expressões</title>
+</head>
+<body>
+    <aside id="intro" class="nav-bar-container">
+        <h2>TÓPICOS</h2>
+        <nav>
+            <ul>
+                <li class="btns"><a class="active" href="#if">Operadores Aritméticos</a></li>
+                <li class="btns"><a href="#SWITCH">Operadores Relacionais Operadores Lógicos </a></li>
+                <li class="btns"><a href="#Exemplos"> Ordem de Precedência dos Operadores</a></li>
+                <li class="btns"><a href="#atividades">Exemplo Resolvido e Atividade</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main>
+
+        <section class="section-1">
+                <h1>Operadores e Expressões</h1>
+                <p>Em C, operadores e expressões são elementos fundamentais da linguagem usados para realizar operações em variáveis e valores. Abaixo, os principais tipos de operadores, com exemplos simples:
+
+                </p>
+        </section>
+
+        <section class="section-2">
+
+            <aside id="if">
+                <h2>1. Operadores Aritméticos</h2>
+                <p>Usados para operações matemáticas básicas.</p>
+                <pre>
+                    | Operador | Descrição      | Exemplo |
+                    | -------- | -------------- | ------- |
+                    | `+`      | Adição         | `a + b` |
+                    | `-`      | Subtração      | `a - b` |
+                    | `*`      | Multiplicação  | `a * b` |
+                    | `/`      | Divisão        | `a / b` |
+                    | `%`      | Módulo (resto) | `a % b` |
+                    
+                </pre>
+            </aside>
+
+            <aside id="SWITCH">
+                
+                <h2>2. Operadores Relacionais</h2>
+                <p>Usados para comparar valores, retornam verdadeiro (1) ou falso (0).</p>
+                <pre>
+                    | Operador | Significado    | Exemplo  |
+                    | -------- | -------------- | -------- |
+                    | `==`     | Igual a        | `a == b` |
+                    | `!=`     | Diferente de   | `a != b` |
+                    | `>`      | Maior que      | `a > b`  |
+                    | `<`      | Menor que      | `a < b`  |
+                    | `>=`     | Maior ou igual | `a >= b` |
+                    | `<=`     | Menor ou igual | `a <= b` |
+                    
+                </pre>
+
+            </aside>
+
+            <aside>
+
+                <h2>3. Operadores Lógicos</h2>
+                <p>Usados para atribuir valores a variáveis.</p>
+                <pre>| Operador | Significado      | Exemplo            |                |          |   |          |
+| -------- | ---------------- | ------------------ | -------------- | -------- | - | -------- |
+| `&&`     | E lógico (AND)   | `(a > 0 && b > 0)` |                |          |   |          |
+| \`       |                  | \`                 | OU lógico (OR) | \`(a > 0 |   | b > 0)\` |
+| `!`      | NÃO lógico (NOT) | `!(a > b)`         |                |          |   |          |
+
+                </pre>
+            
+            </aside>
+
+
+            <aside id="Exemplos">
+
+                <h2>4. Ordem de Precedência dos Operadores</h2>
+                <p>A ordem de precedência dos operadores em C determina quais operações são executadas primeiro em uma expressão com múltiplos operadores, assim como na matemática</p>
+                <pre>
+                    Parênteses: (), [], ->, .
+
+                    Unários: ++, --, +, -, !, ~, (type)
+                    
+                    Multiplicação e Divisão: *, /, %
+                    
+                    Soma e Subtração: +, -
+                    
+                    Shift: <<, >>
+                    
+                    Comparações: <, <=, >, >=
+                    
+                    Igualdade: ==, !=
+                    
+                    Bitwise AND/OR/XOR: &, ^, |
+                    
+                    Lógicos: &&, ||
+                    
+                    Ternário: ?:
+                    
+                    Atribuição: =, +=, -=, etc.
+                    
+                    Vírgula: ,
+                </pre>
+
+            </aside>
+
+            <aside>
+
+                <h2>5. Exemplo Resolvido</h2>
+                <p>b * 3 é feito primeiro (multiplicação tem maior precedência).
+
+                    Depois soma com a:
+                    4 + 6 = 10</p>
+                <pre
+                #include <stdio.h>
+
+                    int main() {
+                        int a = 4, b = 2;
+                        int resultado = a + b * 3;
+                    
+                        printf("Resultado: %d\n", resultado); // Esperado: 4 + (2 * 3) = 10
+                        return 0;
+                    }
+                    </pre>
+            
+            </aside>
+
+            <aside id="atividades">
+
+                <h2>6. Atividades para Praticar</h2>
+                <ul>
+                    <li>Peça ao usuário para digitar dois números inteiros.</li>
+                    <li>Realize e exiba os seguintes cálculos:</li>
+                    <li>Soma,
+
+                        Subtração,
+                        
+                        Multiplicação,
+                        
+                        Divisão inteira/
+                        
+                        Resto da divisão </li>
+                   
+                </ul>
+                
+            </aside>
+
+        </section>
+
+        <footer class="footer">
+            <div class="footer-container">
+              <p>&copy; 2025 Estruturas Condicionais | Desenvolvido por Felipe</p>
+              <nav class="footer-links">
+                <a href="#intro">Início</a>
+                <a href="#Exemplos">Exemplos</a>
+                <a href="#atividades">Atividades</a>
+              </nav>
+            </div>
+          </footer>
+    </main>
+</body>
+</html>
