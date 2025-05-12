@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="logica.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variáveis em JavaScript</title>
+</head>
+<body>
+    <aside id="intro" class="nav-bar-container">
+        <h2>Variáveis</h2>
+        <nav>
+            <ul>
+                <li class="btns"><a class="active" href="#conceito">Conceito</a></li>
+                <li class="btns"><a href="#tipos">Tipos</a></li>
+                <li class="btns"><a href="#declaracao">Declaração</a></li>
+                <li class="btns"><a href="#boaspraticas">Boas Práticas</a></li>
+                <li class="btns"><a href="#exemplos">Exemplos Resolvidos</a></li>
+                <li class="btns"><a href="#atividades">Atividades</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main>
+
+        <section class="section-1">
+            <h1>Trabalhando com Variáveis</h1>
+            <p>Variáveis são usadas para armazenar valores que podem ser utilizados e manipulados ao longo do programa. Elas são essenciais para o funcionamento de qualquer linguagem de programação.</p>
+        </section>
+
+        <section class="section-2">
+            <aside id="conceito">
+                <h2>1. O que são variáveis?</h2>
+                <p>Variáveis são espaços nomeados na memória do computador que armazenam dados. Elas permitem que reutilizemos e modifiquemos valores durante a execução de um programa. São fundamentais para criar programas dinâmicos.</p>
+            </aside>
+
+            <aside id="tipos">
+                <h2>2. Tipos de variáveis em JavaScript</h2>
+                <p>JavaScript trabalha com diferentes tipos de dados:</p>
+                <ul>
+                    <li><strong>String:</strong> textos, como "Olá Mundo"</li>
+                    <li><strong>Number:</strong> números, como 10, 2.5, -3</li>
+                    <li><strong>Boolean:</strong> verdadeiro (<code>true</code>) ou falso (<code>false</code>)</li>
+                    <li><strong>Null:</strong> valor nulo proposital</li>
+                    <li><strong>Undefined:</strong> variável declarada, mas sem valor atribuído</li>
+                    <li><strong>Object:</strong> estrutura de dados com propriedades</li>
+                    <li><strong>Array:</strong> lista ordenada de valores</li>
+                </ul>
+            </aside>
+
+            <aside id="declaracao">
+                <h2>3. Declaração de Variáveis</h2>
+                <p>Podemos declarar variáveis em JavaScript de três formas:</p>
+                <ul>
+                    <li><strong>var</strong>: forma antiga, escopo global ou de função.</li>
+                    <li><strong>let</strong>: escopo de bloco, recomendada para variáveis que mudam.</li>
+                    <li><strong>const</strong>: escopo de bloco, usada para valores constantes.</li>
+                </ul>
+                <pre>
+var nome = "Carlos";
+let idade = 28;
+const cidade = "Curitiba";
+                </pre>
+            </aside>
+
+            <aside id="boaspraticas">
+                <h2>4. Boas Práticas</h2>
+                <ul>
+                    <li>Use <strong>let</strong> e <strong>const</strong> em vez de <code>var</code></li>
+                    <li>Escolha nomes significativos para as variáveis</li>
+                    <li>Evite abreviações desnecessárias</li>
+                    <li>Inicialize as variáveis sempre que possível</li>
+                    <li>Use <code>const</code> quando o valor não será reatribuído</li>
+                </ul>
+            </aside>
+
+            <aside id="exemplos">
+                <h2>5. Exemplos Resolvidos</h2>
+                <p><strong>Exemplo 1:</strong> Concatenar texto e número</p>
+                <pre>
+let nome = "Ana";
+let idade = 25;
+console.log(nome + " tem " + idade + " anos.");
+                </pre>
+
+                <p><strong>Exemplo 2:</strong> Soma de dois números</p>
+                <pre>
+let a = 10;
+let b = 20;
+let soma = a + b;
+console.log("A soma é: " + soma);
+                </pre>
+
+                <p><strong>Exemplo 3:</strong> Alterar valor de uma variável</p>
+                <pre>
+let contador = 1;
+contador = contador + 1;
+console.log("Contador: " + contador);
+                </pre>
+            </aside>
+
+            <aside id="atividades">
+                <h2>6. Atividades para Praticar</h2>
+                <ul>
+                    <li>Declare uma variável com seu nome e imprima no console.</li>
+                    <li>Crie duas variáveis com números e mostre a soma.</li>
+                    <li>Utilize <code>const</code> para declarar um valor fixo e tente alterá-lo.</li>
+                    <li>Declare uma variável booleana e imprima seu valor.</li>
+                    <li>Crie um programa que calcule a média de duas notas.</li>
+                    <li>Crie um objeto com informações sobre um aluno (nome, idade, curso).</li>
+                    <li>Crie um array com 5 frutas e mostre a terceira fruta.</li>
+                </ul>
+            </aside>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-container">
+              <p>&copy; 2025 Variáveis em JavaScript | Desenvolvido por Felipe</p>
+              <nav class="footer-links">
+                <a href="#intro">Início</a>
+                <a href="#exemplos">Exemplos</a>
+                <a href="#atividades">Atividades</a>
+              </nav>
+            </div>
+        </footer>
+
+    </main>
+</body>
+</html>
