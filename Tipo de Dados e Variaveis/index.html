@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programação em C - Tipos de Dados e Variáveis</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <aside id="nav-bar" class="nav-bar-container">
+        <h2>Fundamentos em C</h2>
+        <nav>
+            <ul>
+                <li><a href="#introducao">Introdução</a></li>
+                <li><a href="#tipos-primitivos">Tipos Primitivos</a></li>
+                <li><a href="#declaracao-inicializacao">Declaração e Inicialização</a></li>
+                <li><a href="#constantes">Constantes</a></li>
+                <li><a href="#nomenclatura">Nomenclatura</a></li>
+                <li><a href="#exemplos-codigos">Exemplos de Códigos</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main>
+        <section id="introducao">
+            <h1>Tipos de Dados e Variáveis em C</h1>
+            <p>Em programação, os tipos de dados definem o tipo de informação que uma variável pode armazenar e o espaço que ocupa na memória. As variáveis são espaços reservados na memória para armazenar dados que podem ser modificados durante a execução do programa.</p>
+        </section>
+
+        <section id="tipos-primitivos">
+            <h2>Tipos Primitivos</h2>
+            <p>Os tipos primitivos básicos em C são:</p>
+            <ul>
+                <li><strong>int</strong>: Números inteiros</li>
+                <li><strong>float</strong>: Números reais (precisão simples)</li>
+                <li><strong>double</strong>: Números reais (precisão dupla)</li>
+                <li><strong>char</strong>: Um único caractere</li>
+            </ul>
+        </section>
+
+        <section id="declaracao-inicializacao">
+            <h2>Declaração e Inicialização de Variáveis</h2>
+            <p>Em C, as variáveis devem ser declaradas antes de serem usadas. A declaração especifica o tipo e o nome da variável. A inicialização é a atribuição de um valor inicial.</p>
+            <pre><code>int quantidade;          // Declaração
+quantidade = 10;        // Atribuição posterior
+
+float preco = 29.90;    // Declaração com inicialização
+char opcao = 'S';       // Variável do tipo char</code></pre>
+        </section>
+
+        <section id="constantes">
+            <h2>Constantes</h2>
+            <p>Constantes são valores fixos que não podem ser alterados durante a execução do programa. Em C, podemos definir constantes de duas formas:</p>
+            <pre><code>#define PI 3.14159
+#define MAX_ALUNOS 50</code></pre>
+            <pre><code>const float PI = 3.14159;
+const int MAX_ALUNOS = 50;</code></pre>
+        </section>
+
+        <section id="nomenclatura">
+            <h2>Regras de Nomenclatura para Variáveis</h2>
+            <ul>
+                <li>Devem começar com uma letra ou sublinhado (<code>_</code>)</li>
+                <li>Podem conter letras, números e sublinhados</li>
+                <li>Não podem conter espaços ou caracteres especiais</li>
+                <li>Não podem ser palavras reservadas da linguagem (<code>int</code>, <code>float</code>, etc.)</li>
+                <li>Diferenciam maiúsculas de minúsculas (<code>idade</code> ≠ <code>Idade</code> ≠ <code>IDADE</code>)</li>
+            </ul>
+        </section>
+
+        <section id="exemplos-codigos">
+            <h2>Exemplos de Códigos</h2>
+            <h3>Exemplo 1: Calculando a área de um círculo</h3>
+            <pre><code>#include &lt;stdio.h&gt;
+#define PI 3.14159
+
+int main() {
+    float raio, area;
+    
+    printf("Digite o raio do círculo: ");
+    scanf("%f", &raio);
+    
+    area = PI * raio * raio;
+    
+    printf("Área do círculo: %.2f\n", area);
+    
+    return 0;
+}</code></pre>
+            <h3>Exemplo 2: Conversão de temperaturas</h3>
+            <pre><code>#include &lt;stdio.h&gt;
+
+int main() {
+    const float FATOR = 5.0 / 9.0;
+    const float AJUSTE = 32.0;
+    float celsius, fahrenheit;
+    
+    printf("Digite a temperatura em Fahrenheit: ");
+    scanf("%f", &fahrenheit);
+    
+    celsius = (fahrenheit - AJUSTE) * FATOR;
+    
+    printf("Temperatura em Celsius: %.1f\n", celsius);
+    
+    return 0;
+}</code></pre>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2023 Grupo de Estudos de Programação em C</p>
+        <p>Desenvolvido para fins educacionais</p>
+    </footer>
+</body>
+</html>
