@@ -1,46 +1,52 @@
-/* Resetando margens e padding */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Corpo da página */
+
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    display: flex;
+    min-height: 100vh; 
+    flex-direction: column; 
     background-color: #121212;
     color: #e0e0e0;
-    display: flex;
     font-family: Arial, sans-serif;
 }
 
-/* Menu lateral (Nav-bar) */
+
+.page-content {
+    display: flex;
+    flex: 1; 
+    min-height: 0; 
+}
+
+
 .nav-bar-container {
     background-color: #1f1f1f;
-    flex-direction: column;
     width: 15rem;
     padding: 1.5rem;
     border-right: 1px solid #333;
-    position: fixed; /* Menu lateral fixo */
-    height: 100vh; /* Preenche toda a altura da tela */
-    overflow-y: auto; /* Se o menu for longo, terá scroll */
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    overflow-y: auto;
 }
 
-/* Títulos no menu */
 .nav-bar-container h2 {
     color: #4FC3F7;
     margin-bottom: 1rem;
 }
 
-/* Lista do menu */
 .nav-bar-container ul {
-    padding: 0;
+    list-style: none;
+    padding-left: 0;
 }
 
 .nav-bar-container li {
-    list-style-type: none;
+    margin-bottom: 0.5rem;
 }
 
 .nav-bar-container a {
@@ -48,11 +54,10 @@ body {
     text-decoration: none;
     display: block;
     border-left: 4px solid transparent;
-    transition: background-color 0.2s ease;
     padding: 0.6rem;
+    transition: background-color 0.2s ease, border-left-color 0.2s ease, color 0.2s ease;
 }
 
-/* Efeito ao passar o mouse sobre os links do menu */
 .nav-bar-container a:hover,
 .nav-bar-container a.active {
     background-color: #333;
@@ -60,59 +65,30 @@ body {
     color: #fff;
 }
 
-/* Conteúdo principal */
+
 main {
     flex: 1;
     padding: 2.5rem;
-    margin-left: 17rem; /* Empurra o conteúdo para a direita do menu */
+    margin-left: 15rem; 
+    overflow-y: auto;
 }
 
-/* Primeira seção de conteúdo */
-.section-1 {
-    background-color: #1e2a38;
-    padding: 1.2rem;
-    border-radius: 5px;
-    margin-bottom: 20px;
-}
 
-.section-1 h1 {
-    color: #4FC3F7;
-    font-size: 2rem;
-}
-
-/* Segunda seção de conteúdo */
-.section-2 h2 {
-    color: #4FC3F7;
-    margin-top: 20px;
-}
-
-/* Estilização do código exibido em <pre> */
-pre {
-    background-color: #263238;
-    border-left: 4px solid #4FC3F7;
-    padding: 1rem;
-    font-family: monospace;
-    white-space: pre-wrap;
-    border-radius: 5px;
-    margin-top: 10px;
-    color: #fff;
-}
-
-/* Rodapé */
-.footer {
+footer.footer {
     background-color: #111;
     color: #ccc;
     padding: 20px 0;
     text-align: center;
-    margin-top: 40px;
     border-top: 1px solid #333;
 }
+
 
 .footer-container {
     max-width: 1000px;
     margin: 0 auto;
     padding: 0 20px;
 }
+
 
 .footer-links {
     margin-top: 10px;
@@ -129,3 +105,30 @@ pre {
     color: #fff;
 }
 
+
+.section-1 {
+    background-color: #1e2a38;
+    padding: 1.2rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.section-1 h1 {
+    color: #4FC3F7;
+    font-size: 2rem;
+}
+
+.section-2 h2 {
+    color: #4FC3F7;
+}
+
+pre {
+    background-color: #263238;
+    border-left: 4px solid #4FC3F7;
+    padding: 1rem;
+    font-family: monospace;
+    white-space: pre-wrap;
+    border-radius: 5px;
+    margin-top: 10px;
+    color: #fff;
+}

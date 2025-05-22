@@ -1,32 +1,154 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Estruturas de Repetição em C</title>
-    <link rel="stylesheet" href="EstruturasDeRepeticao.css"> <!-- Conectando com o arquivo CSS -->
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            display: flex;
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        .nav-bar-container {
+            background-color: #1f1f1f;
+            flex-direction: column;
+            width: 15rem;
+            padding: 1.5rem;
+            border-right: 1px solid #333;
+            position: fixed;
+            height: 100vh;
+            overflow-y: auto;
+            top: 0;
+            left: 0;
+        }
+
+        .nav-bar-container h2 {
+            color: #4FC3F7;
+            margin-bottom: 1rem;
+        }
+
+        .nav-bar-container ul {
+            list-style: none;
+        }
+
+        .nav-bar-container li {
+            margin-bottom: 0.5rem;
+        }
+
+        .nav-bar-container a {
+            color: #ccc;
+            text-decoration: none;
+            display: block;
+            border-left: 4px solid transparent;
+            transition: background-color 0.2s ease;
+            padding: 0.6rem;
+            cursor: pointer;
+        }
+
+        .nav-bar-container a:hover,
+        .nav-bar-container a.active {
+            background-color: #333;
+            border-left: 4px solid #4FC3F7;
+            color: #fff;
+        }
+
+        main {
+            flex: 1;
+            padding: 2.5rem;
+            margin-left: 17rem; 
+        }
+
+        .section-1 {
+            background-color: #1e2a38;
+            padding: 1.2rem;
+            border-radius: 5px;
+            margin-bottom: 1.5rem;
+        }
+
+        .section-1 h1 {
+            color: #4FC3F7;
+            font-size: 2rem;
+        }
+
+        .section-2 h2 {
+            color: #4FC3F7;
+        }
+
+        pre {
+            background-color: #263238;
+            border-left: 4px solid #4FC3F7;
+            padding: 1rem;
+            font-family: monospace;
+            white-space: pre-wrap;
+            border-radius: 5px;
+            margin-top: 10px;
+            color: #fff;
+        }
+
+        .footer {
+            background-color: #111;
+            color: #ccc;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: auto;
+            border-top: 1px solid #333;
+        }
+
+        .footer-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .footer-links {
+            margin-top: 10px;
+        }
+
+        .footer-links a {
+            color: #00bfff;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
 
-    <!-- Menu Lateral -->
+    
     <div class="nav-bar-container">
         <h2>Menu</h2>
         <ul>
-            <li><a href="#">Introdução</a></li>
-            <li><a href="#">Estruturas de Repetição</a></li>
-            <li><a href="#">Exemplos</a></li>
-            <li><a href="#">Atividades</a></li>
+            <li><a href="#introducao" class="active">Introdução</a></li>
+            <li><a href="#estruturas">Estruturas de Repetição</a></li>
+            <li><a href="#exemplos">Exemplos</a></li>
+            <li><a href="#atividades">Atividades</a></li>
         </ul>
     </div>
 
-    <!-- Conteúdo Principal -->
+    
     <main>
-        <section class="section-1">
+        <section id="introducao" class="section-1">
             <h1>Estruturas de Repetição em C</h1>
             <p>As estruturas de repetição são usadas quando é necessário executar um bloco de código várias vezes. Vamos ver como utilizá-las em C.</p>
         </section>
 
-        <section class="section-2">
+        <section id="estruturas" class="section-2">
             <h2>1. while</h2>
             <p>A estrutura <code>while</code> executa um bloco de código enquanto uma condição for verdadeira. A condição é verificada antes da execução do bloco.</p>
             <pre>
@@ -36,7 +158,7 @@ while (condição) {
             </pre>
         </section>
 
-        <section class="section-2">
+        <section id="estruturas" class="section-2">
             <h2>2. do while</h2>
             <p>A estrutura <code>do while</code> garante que o bloco de código seja executado pelo menos uma vez, pois a condição é verificada após a execução.</p>
             <pre>
@@ -46,7 +168,7 @@ do {
             </pre>
         </section>
 
-        <section class="section-2">
+        <section id="estruturas" class="section-2">
             <h2>3. for</h2>
             <p>A estrutura <code>for</code> é usada quando se sabe antecipadamente o número de vezes que um bloco de código deve ser executado.</p>
             <pre>
@@ -56,7 +178,7 @@ for (inicialização; condição; incremento) {
             </pre>
         </section>
 
-        <section class="section-2">
+        <section id="exemplos" class="section-2">
             <h2>4. Exemplos de Códigos (Atividades Resolvidas)</h2>
 
             <h3>Exemplo 1: Contar de 1 a 10 com while</h3>
@@ -105,7 +227,7 @@ int main() {
             </pre>
         </section>
 
-        <section class="section-2">
+        <section id="atividades" class="section-2">
             <h2>5. Lista de Atividades (Para a Comunidade Resolver)</h2>
             <ol>
                 <li>Mostre a palavra "Olá, Mundo!" cinco vezes usando <code>for</code>.</li>
@@ -179,7 +301,7 @@ int main() {
         </section>
     </main>
 
-    <!-- Rodapé -->
+    
     <footer class="footer">
         <div class="footer-container">
             <p>&copy; 2025 Estruturas de Repetição em C</p>
@@ -190,6 +312,20 @@ int main() {
             </div>
         </div>
     </footer>
+
+    <script>
+        
+        const navLinks = document.querySelectorAll('.nav-bar-container a');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                
+                navLinks.forEach(l => l.classList.remove('active'));
+                
+                this.classList.add('active');
+            });
+        });
+    </script>
 
 </body>
 </html>
