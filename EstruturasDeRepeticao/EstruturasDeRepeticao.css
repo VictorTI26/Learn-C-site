@@ -1,40 +1,32 @@
-/* Resetando margens e padding */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Corpo da página */
+/* GARANTE QUE O FOOTER FIQUE NO FINAL */
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-color: #121212;
     color: #e0e0e0;
-    display: flex;
     font-family: Arial, sans-serif;
+
+    display: flex;
+    min-height: 100vh;
 }
 
-/* Menu lateral (Nav-bar) */
+/* BARRA LATERAL */
 .nav-bar-container {
     background-color: #1f1f1f;
     flex-direction: column;
     width: 15rem;
     padding: 1.5rem;
     border-right: 1px solid #333;
-    position: fixed; /* Menu lateral fixo */
-    height: 100vh; /* Preenche toda a altura da tela */
-    overflow-y: auto; /* Se o menu for longo, terá scroll */
+    position: fixed;
+    height: 100vh;
+    overflow-y: auto;
 }
 
-/* Títulos no menu */
 .nav-bar-container h2 {
     color: #4FC3F7;
-    margin-bottom: 1rem;
 }
 
-/* Lista do menu */
 .nav-bar-container ul {
     padding: 0;
 }
@@ -52,7 +44,6 @@ body {
     padding: 0.6rem;
 }
 
-/* Efeito ao passar o mouse sobre os links do menu */
 .nav-bar-container a:hover,
 .nav-bar-container a.active {
     background-color: #333;
@@ -60,19 +51,24 @@ body {
     color: #fff;
 }
 
-/* Conteúdo principal */
+/* ÁREA PRINCIPAL */
 main {
     flex: 1;
+    display: flex;
+    flex-direction: column;
     padding: 2.5rem;
-    margin-left: 17rem; /* Empurra o conteúdo para a direita do menu */
+    margin-left: 17rem;
 }
 
-/* Primeira seção de conteúdo */
+/* CONTEÚDO FLEXÍVEL PARA EMPURRAR O FOOTER */
+main > .content {
+    flex-grow: 1;
+}
+
 .section-1 {
     background-color: #1e2a38;
     padding: 1.2rem;
     border-radius: 5px;
-    margin-bottom: 20px;
 }
 
 .section-1 h1 {
@@ -80,13 +76,10 @@ main {
     font-size: 2rem;
 }
 
-/* Segunda seção de conteúdo */
 .section-2 h2 {
     color: #4FC3F7;
-    margin-top: 20px;
 }
 
-/* Estilização do código exibido em <pre> */
 pre {
     background-color: #263238;
     border-left: 4px solid #4FC3F7;
@@ -98,7 +91,7 @@ pre {
     color: #fff;
 }
 
-/* Rodapé */
+/* FOOTER */
 .footer {
     background-color: #111;
     color: #ccc;
@@ -128,4 +121,3 @@ pre {
 .footer-links a:hover {
     color: #fff;
 }
-
