@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Entrada e saida de dados.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrada e Saída de Dados</title>
+</head>
+<body>
+    <aside id="intro" class="nav-bar-container">
+        <h2>Entrada/Saída</h2>
+        <nav>
+            <ul>
+                <li class="btns"><a class="active" href="#printf">Printf</a></li>
+                <li class="btns"><a href="#scanf">Scanf</a></li>
+                <li class="btns"><a href="#formatacao">Formatação</a></li>
+                <li class="btns"><a href="#exemplos">Exemplos Resolvidos</a></li>
+                <li class="btns"><a href="#atividades">Atividades</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main>
+
+        <section class="section-1">
+            <h1>Entrada e Saída de Dados</h1>
+            <p>Aprender a utilizar as funções de entrada e saída de dados é essencial para a interação do usuário com o programa. A seguir, veremos como usar <strong>printf</strong>, <strong>scanf</strong> e como formatar corretamente as saídas.</p>
+        </section>
+
+        <section class="section-2">
+
+            <aside id="printf">
+                <h2>1. Função printf</h2>
+                <p>Usamos a função <strong>printf</strong> para exibir mensagens na tela.</p>
+                <pre>
+#include &lt;stdio.h&gt;
+
+int main() {
+    printf("Olá, mundo!");
+    return 0;
+}
+                </pre>
+            </aside>
+
+            <aside id="scanf">
+                <h2>2. Função scanf</h2>
+                <p>A função <strong>scanf</strong> é usada para ler dados inseridos pelo usuário.</p>
+                <pre>
+#include &lt;stdio.h&gt;
+
+int main() {
+    int idade;
+    printf("Digite sua idade: ");
+    scanf("%d", &idade);
+    return 0;
+}
+                </pre>
+            </aside>
+
+            <aside id="formatacao">
+                <h2>3. Formatação com Especificadores</h2>
+                <p>Utilizamos especificadores para formatar os tipos de dados:</p>
+                <ul>
+                    <li><strong>%d</strong> - Números inteiros</li>
+                    <li><strong>%f</strong> - Números reais (float)</li>
+                    <li><strong>%c</strong> - Caracteres</li>
+                    <li><strong>%s</strong> - Strings (conjunto de caracteres)</li>
+                </ul>
+                <pre>
+int idade = 25;
+float altura = 1.75;
+char letra = 'A';
+printf("Idade: %d anos, Altura: %.2f m, Letra: %c", idade, altura, letra);
+                </pre>
+            </aside>
+
+            <aside id="exemplos">
+                <h2>4. Exemplos Resolvidos</h2>
+                <p><strong>Exemplo:</strong> Ler nome e idade do usuário e exibir uma mensagem formatada.</p>
+                <pre>
+#include &lt;stdio.h&gt;
+
+int main() {
+    char nome[50];
+    int idade;
+
+    printf("Digite seu nome: ");
+    scanf("%s", nome);
+
+    printf("Digite sua idade: ");
+    scanf("%d", &idade);
+
+    printf("Olá %s, você tem %d anos.\n", nome, idade);
+    return 0;
+}
+                </pre>
+            </aside>
+
+            <aside id="atividades">
+                <h2>5. Atividades para Praticar</h2>
+                <ul>
+                    <li>Faça um programa que leia um caractere e o exiba como saída.</li>
+                    <li>Peça ao usuário para digitar seu nome completo e mostre na tela.</li>
+                </ul>
+            </aside>
+
+        </section>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <p>&copy; 2025 Entrada/Saída de Dados | Desenvolvido por João Vitor Stähelin</p>
+                <nav class="footer-links">
+                    <a href="#intro">Início</a>
+                    <a href="#exemplos">Exemplos</a>
+                    <a href="#atividades">Atividades</a>
+                </nav>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
