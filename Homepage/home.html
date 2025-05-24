@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="home.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linguagem C</title>
+</head>
+<body>
+    <aside id="intro" class="nav-bar-container">
+        <h2>Condicionais</h2>
+        <nav>
+            <ul>
+                <li class="btns"><a class="active" href="../Lógica - Victor Micheluzzi/logica.html">Lógica de Progamação</a></li>
+                <li class="btns"><a href="../Introducao C - Ricardo/programaçaoC.html">Introdução a Programação em C</a></li>
+                <li class="btns"><a href="../Variaveis - Meyer/index.html">Tipos de dados e variáveis</a></li>
+                <li class="btns"><a href="../Operadores - Vitor Uler/operadoresexpressoes.html">Operadores e Expressões</a></li>
+                <li class="btns"><a href="../ElseIF - Felipe/else2.html">Estruturas Condicionais</a></li>
+                <li class="btns"><a href="../Repeticao - Heitor/EstruturasDeRepeticao.html">Estruturas de Repetições</a></li>
+                <li class="btns"><a href="../Saida de dados - Stahelin/Entrada e saida de dados.html">Entrada e saídas de dados</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <div class="content-wrapper">
+        <main>
+            <section class="section-1">
+                <h1>Linguagem C</h1>
+                <p>A linguagem C é uma linguagem de programação de propósito geral, estruturada e de baixo nível. É amplamente usada para desenvolver sistemas operacionais, 
+                    drivers e softwares de desempenho crítico.
+                </p>
+            </section>
+
+            <section>
+                <pre id="typing"></pre>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-container">
+              <p>&copy; 2025 Estruturas Condicionais | Desenvolvido por Felipe</p>
+              <nav class="footer-links">
+                <a href="#intro">Início</a>
+                <a href="#Exemplos">Exemplos</a>
+                <a href="#atividades">Atividades</a>
+              </nav>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+      const code = `#include <stdio.h>
+
+int main() {
+    printf("Olá, Mundo!\\n");
+    return 0;
+}`;
+    
+      const typingElement = document.getElementById("typing");
+      let index = 0;
+    
+      function typeCode() {
+        if (index < code.length) {
+          typingElement.textContent += code.charAt(index);
+          index++;
+          setTimeout(typeCode, 50);
+        } else {
+          setTimeout(() => {
+            typingElement.textContent = "";
+            index = 0;
+            typeCode();
+          }, 2000);
+        }
+      }
+    
+      typeCode();
+    </script>
+</body>
+</html>
