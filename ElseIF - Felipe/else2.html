@@ -8,7 +8,7 @@
 </head>
 <body>
     <aside id="intro" class="nav-bar-container">
-        <h2>Condicionais</h2>
+        <a class="tittle" href="../Homepage/home.html">Linguacem C</a>
         <nav>
             <ul>
                 <li class="btns"><a class="active" href="#if">IF / ELSE</a></li>
@@ -32,14 +32,23 @@
                 <h2>1. if, else if, else</h2>
                 <p>Usamos o <strong>if</strong> para testar uma condição. Podemos encadear com <strong>else if</strong> e usar <strong>else</strong> como alternativa final.</p>
                 <pre>
-let nota = 7;
+#include < stdio.h>
 
-if (nota >= 7) {
-console.log("Aprovado");
-} else if (nota >= 5) {
-console.log("Recuperação");
-} else {
-console.log("Reprovado");
+int main() {
+    int nota;
+
+    printf("Digite a nota do aluno: ");
+    scanf("%d", &nota);
+
+    if (nota >= 7) {
+        printf("Aprovado\n");
+    } else if (nota >= 5) {
+        printf("Recuperação\n");
+    } else {
+        printf("Reprovado\n");
+    }
+
+    return 0;
 }
                 </pre>
             </aside>
@@ -49,21 +58,44 @@ console.log("Reprovado");
                 <h2>2. switch e case</h2>
                 <p>O comando <strong>switch</strong> testa uma variável contra múltiplos <strong>cases</strong>.</p>
                 <pre>
-let dia = 3;
+#include < stdio.h>
 
-switch (dia) {
-case 1:
-console.log("Domingo");
-break;
-case 2:
-console.log("Segunda-feira");
-break;
-case 3:
-console.log("Terça-feira");
-break;
-default:
-console.log("Dia inválido");
+int main() {
+    int dia;
+
+    printf("Digite um número de 1 a 7 correspondente ao dia da semana: ");
+    scanf("%d", &dia);
+
+    switch (dia) {
+        case 1:
+            printf("Domingo\n");
+            break;
+        case 2:
+            printf("Segunda-feira\n");
+            break;
+        case 3:
+            printf("Terça-feira\n");
+            break;
+        case 4:
+            printf("Quarta-feira\n");
+            break;
+        case 5:
+            printf("Quinta-feira\n");
+            break;
+        case 6:
+            printf("Sexta-feira\n");
+            break;
+        case 7:
+            printf("Sábado\n");
+            break;
+        default:
+            printf("Dia inválido\n");
+            break;
+    }
+
+    return 0;
 }
+
                 </pre>
 
             </aside>
@@ -80,15 +112,25 @@ console.log("Dia inválido");
                 <h2>4. Exemplos Resolvidos</h2>
                 <p><strong>Exemplo:</strong> Verificar se um número é positivo, negativo ou zero.</p>
                 <pre>
-let numero = 0;
+#include < stdio.h>
 
-if (numero > 0) {
-console.log("Positivo");
-} else if (numero < 0) {
-console.log("Negativo");
-} else {
-console.log("Zero");
+int main() {
+    int numero;
+
+    printf("Digite um número: ");
+    scanf("%d", &numero);
+
+    if (numero > 0) {
+        printf("Positivo\n");
+    } else if (numero < 0) {
+        printf("Negativo\n");
+    } else {
+        printf("Zero\n");
+    }
+
+    return 0;
 }
+
                 </pre>
 
             </aside>
@@ -98,9 +140,7 @@ console.log("Zero");
                 <h2>5. Atividades para Praticar</h2>
                 <ul>
                     <li>Crie um código que leia a idade e diga se é maior ou menor de idade.</li>
-                    <li>Verifique se um número é par ou ímpar.</li>
                     <li>Utilize switch para imprimir o nome do mês com base no número (1 a 12).</li>
-                    <li>Crie um menu com switch para um sistema de loja (ex: 1 - Comprar, 2 - Vender, etc.).</li>
                 </ul>
                 
             </aside>

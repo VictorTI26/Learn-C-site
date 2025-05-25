@@ -111,3 +111,23 @@ pre {
     color: #fff;
   }
   
+  .nav-bar-container a.tittle {
+  color: #00bfff;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  border-left: none;
+  transition: none;
+  padding: 0;
+  background-color: transparent;
+}
+
+/* Também sobrescreve os estilos de hover e active */
+.nav-bar-container a.tittle:hover,
+.nav-bar-container a.tittle.active {
+  background-color: transparent;
+  border-left: none;
+  color: #00bfff;
+}
